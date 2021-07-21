@@ -1,0 +1,13 @@
+﻿<Window x:Class="CG.Events.QuickStart.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CG.Events.QuickStart.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="300">
+    <Grid >
+        <Button x:Name="button1" Content="Publish" HorizontalAlignment="Left" Margin="18,21,0,0" VerticalAlignment="Top" RenderTransformOrigin="-4.568,-10.469" Click="button1_Click"/>
+        <Label x:Name="label1" Content="" HorizontalAlignment="Center" Margin="0,49,0,0" VerticalAlignment="Top" Width="165"/>
+    </Grid>
+</Window>

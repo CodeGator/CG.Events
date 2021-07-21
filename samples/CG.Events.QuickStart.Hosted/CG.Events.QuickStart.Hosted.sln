@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31507.150
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CG.Events.QuickStart.Hosted", "CG.Events.QuickStart.Hosted.csproj", "{2629C6E9-6093-4032-9622-31A0A2B02B39}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.Events", "..\..\src\CG.Events\CG.Events.csproj", "{2DF5E7CD-B145-426B-B6FF-AE411E6B2BAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2629C6E9-6093-4032-9622-31A0A2B02B39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2629C6E9-6093-4032-9622-31A0A2B02B39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2629C6E9-6093-4032-9622-31A0A2B02B39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2629C6E9-6093-4032-9622-31A0A2B02B39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DF5E7CD-B145-426B-B6FF-AE411E6B2BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DF5E7CD-B145-426B-B6FF-AE411E6B2BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DF5E7CD-B145-426B-B6FF-AE411E6B2BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DF5E7CD-B145-426B-B6FF-AE411E6B2BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7BC2333-C0D8-4B5E-9D43-821E3F461660}
+	EndGlobalSection
+EndGlobal
