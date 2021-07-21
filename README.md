@@ -1,9 +1,9 @@
 # CG.Events: 
 ---
-[![Build Status](https://dev.azure.com/codegator/CG.Events/_apis/build/status/CodeGator.CG.Events?branchName=main)](https://dev.azure.com/codegator/CG.Events/_build/latest?definitionId=25&branchName=main)
+[![Build Status](https://dev.azure.com/codegator/CG.Events/_apis/build/status/CodeGator.CG.Events?branchName=main)](https://dev.azure.com/codegator/CG.Events/_build/latest?definitionId=70&branchName=main)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Events/index.html)
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Events.svg?style=flat)](https://nuget.org/packages/CG.Events)
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Events/25)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Events/70)
 [![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Events/discussions)
 [![CG.Events on fuget.org](https://www.fuget.org/packages/CG.Events/badge.svg)](https://www.fuget.org/packages/CG.Events)
 
