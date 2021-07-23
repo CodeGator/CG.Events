@@ -48,6 +48,43 @@ references:
   fullName.vb: CG.Events.EventAggregator.GetEvent(Of TEvent)()
   nameWithType: EventAggregator.GetEvent<TEvent>()
   nameWithType.vb: EventAggregator.GetEvent(Of TEvent)()
+- uid: CG.Events.EventAggregatorException
+  name: EventAggregatorException
+  href: api/CG.Events.EventAggregatorException.html
+  commentId: T:CG.Events.EventAggregatorException
+  fullName: CG.Events.EventAggregatorException
+  nameWithType: EventAggregatorException
+- uid: CG.Events.EventAggregatorException.#ctor
+  name: EventAggregatorException()
+  href: api/CG.Events.EventAggregatorException.html#CG_Events_EventAggregatorException__ctor
+  commentId: M:CG.Events.EventAggregatorException.#ctor
+  fullName: CG.Events.EventAggregatorException.EventAggregatorException()
+  nameWithType: EventAggregatorException.EventAggregatorException()
+- uid: CG.Events.EventAggregatorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: EventAggregatorException(SerializationInfo, StreamingContext)
+  href: api/CG.Events.EventAggregatorException.html#CG_Events_EventAggregatorException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:CG.Events.EventAggregatorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: CG.Events.EventAggregatorException.EventAggregatorException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: EventAggregatorException.EventAggregatorException(SerializationInfo, StreamingContext)
+- uid: CG.Events.EventAggregatorException.#ctor(System.String)
+  name: EventAggregatorException(String)
+  href: api/CG.Events.EventAggregatorException.html#CG_Events_EventAggregatorException__ctor_System_String_
+  commentId: M:CG.Events.EventAggregatorException.#ctor(System.String)
+  fullName: CG.Events.EventAggregatorException.EventAggregatorException(System.String)
+  nameWithType: EventAggregatorException.EventAggregatorException(String)
+- uid: CG.Events.EventAggregatorException.#ctor(System.String,System.Exception)
+  name: EventAggregatorException(String, Exception)
+  href: api/CG.Events.EventAggregatorException.html#CG_Events_EventAggregatorException__ctor_System_String_System_Exception_
+  commentId: M:CG.Events.EventAggregatorException.#ctor(System.String,System.Exception)
+  fullName: CG.Events.EventAggregatorException.EventAggregatorException(System.String, System.Exception)
+  nameWithType: EventAggregatorException.EventAggregatorException(String, Exception)
+- uid: CG.Events.EventAggregatorException.#ctor*
+  name: EventAggregatorException
+  href: api/CG.Events.EventAggregatorException.html#CG_Events_EventAggregatorException__ctor_
+  commentId: Overload:CG.Events.EventAggregatorException.#ctor
+  isSpec: "True"
+  fullName: CG.Events.EventAggregatorException.EventAggregatorException
+  nameWithType: EventAggregatorException.EventAggregatorException
 - uid: CG.Events.EventSubscription
   name: EventSubscription
   href: api/CG.Events.EventSubscription.html
@@ -238,6 +275,22 @@ references:
   isSpec: "True"
   fullName: CG.Events.Models.EventBase.Publish
   nameWithType: EventBase.Publish
+- uid: CG.Events.Models.EventBase.PublishAsync(System.Object[])
+  name: PublishAsync(Object[])
+  href: api/CG.Events.Models.EventBase.html#CG_Events_Models_EventBase_PublishAsync_System_Object___
+  commentId: M:CG.Events.Models.EventBase.PublishAsync(System.Object[])
+  name.vb: PublishAsync(Object())
+  fullName: CG.Events.Models.EventBase.PublishAsync(System.Object[])
+  fullName.vb: CG.Events.Models.EventBase.PublishAsync(System.Object())
+  nameWithType: EventBase.PublishAsync(Object[])
+  nameWithType.vb: EventBase.PublishAsync(Object())
+- uid: CG.Events.Models.EventBase.PublishAsync*
+  name: PublishAsync
+  href: api/CG.Events.Models.EventBase.html#CG_Events_Models_EventBase_PublishAsync_
+  commentId: Overload:CG.Events.Models.EventBase.PublishAsync
+  isSpec: "True"
+  fullName: CG.Events.Models.EventBase.PublishAsync
+  nameWithType: EventBase.PublishAsync
 - uid: CG.Events.Models.EventBase.Subscribe
   name: Subscribe()
   href: api/CG.Events.Models.EventBase.html#CG_Events_Models_EventBase_Subscribe
@@ -273,22 +326,53 @@ references:
   isSpec: "True"
   fullName: CG.Events.Models.EventBase.Unsubscribe
   nameWithType: EventBase.Unsubscribe
-- uid: CG.Events.ServiceCollectionExtensions
-  name: ServiceCollectionExtensions
-  href: api/CG.Events.ServiceCollectionExtensions.html
-  commentId: T:CG.Events.ServiceCollectionExtensions
-  fullName: CG.Events.ServiceCollectionExtensions
-  nameWithType: ServiceCollectionExtensions
-- uid: CG.Events.ServiceCollectionExtensions.AddEventAggregation(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  name: AddEventAggregation(IServiceCollection)
-  href: api/CG.Events.ServiceCollectionExtensions.html#CG_Events_ServiceCollectionExtensions_AddEventAggregation_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  commentId: M:CG.Events.ServiceCollectionExtensions.AddEventAggregation(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  fullName: CG.Events.ServiceCollectionExtensions.AddEventAggregation(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  nameWithType: ServiceCollectionExtensions.AddEventAggregation(IServiceCollection)
-- uid: CG.Events.ServiceCollectionExtensions.AddEventAggregation*
-  name: AddEventAggregation
-  href: api/CG.Events.ServiceCollectionExtensions.html#CG_Events_ServiceCollectionExtensions_AddEventAggregation_
-  commentId: Overload:CG.Events.ServiceCollectionExtensions.AddEventAggregation
+- uid: Microsoft.AspNetCore.Builder
+  name: Microsoft.AspNetCore.Builder
+  href: api/Microsoft.AspNetCore.Builder.html
+  commentId: N:Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+- uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions
+  name: ApplicationBuilderExtensions
+  href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html
+  commentId: T:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions
+  fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions
+  nameWithType: ApplicationBuilderExtensions
+- uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseEventAggregator(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment)
+  name: UseEventAggregator(IApplicationBuilder, IHostEnvironment)
+  href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseEventAggregator_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_Extensions_Hosting_IHostEnvironment_
+  commentId: M:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseEventAggregator(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment)
+  fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseEventAggregator(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.Extensions.Hosting.IHostEnvironment)
+  nameWithType: ApplicationBuilderExtensions.UseEventAggregator(IApplicationBuilder, IHostEnvironment)
+- uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseEventAggregator*
+  name: UseEventAggregator
+  href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseEventAggregator_
+  commentId: Overload:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseEventAggregator
   isSpec: "True"
-  fullName: CG.Events.ServiceCollectionExtensions.AddEventAggregation
+  fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseEventAggregator
+  nameWithType: ApplicationBuilderExtensions.UseEventAggregator
+- uid: Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  href: api/Microsoft.Extensions.DependencyInjection.html
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddEventAggregation(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddEventAggregation(IServiceCollection)
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddEventAggregation_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddEventAggregation(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddEventAggregation(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddEventAggregation(IServiceCollection)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddEventAggregation*
+  name: AddEventAggregation
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddEventAggregation_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddEventAggregation
+  isSpec: "True"
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddEventAggregation
   nameWithType: ServiceCollectionExtensions.AddEventAggregation

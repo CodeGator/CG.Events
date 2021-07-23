@@ -18,7 +18,19 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Events.EventAggregator.html",
-          "hash": "bmBg+ZDqtDD4VkMjKRE47z2RZJWADCcaj/P8evjgaQ0="
+          "hash": "JMjqIyJwGbOWExCAKnwG1yo9An7P8SRqwSXEfgTKu60="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Events.EventAggregatorException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Events.EventAggregatorException.html",
+          "hash": "QoWJBuAPxW7jc2lA+WrCKzeLQrcOM+xwvBUKjGBD5N4="
         }
       },
       "is_incremental": false,
@@ -42,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Events.IEventAggregator.html",
-          "hash": "Aav3RYdxXvGggv6cbfjXjIZtfYTPA9kpbzA2weJAJb0="
+          "hash": "7Z5zw3AdjfLXM8krjmf8QVB3QNLYm6ooRr9QaN3RPm0="
         }
       },
       "is_incremental": false,
@@ -66,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Events.Models.EventBase.html",
-          "hash": "LM0NByvOy+1WmfPi75Q7vjusu46smTgeUgT+G3CZgNM="
+          "hash": "DQMvekl15JzkCJzZ0DPPYuwqXcDe00cr5TkuXOv5EnM="
         }
       },
       "is_incremental": false,
@@ -78,19 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Events.Models.html",
-          "hash": "TuqBEGl05Q6ii4z0M/y2crhe6SPNWqdJCq3grkKucWg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Events.ServiceCollectionExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Events.ServiceCollectionExtensions.html",
-          "hash": "TP6a6qmzNfTXCJp98uLNOd35F7oNQZXDJ56b1qHYg3E="
+          "hash": "cohmPIzVmYOtMCfmllrpnsZjP+0mGtPw8X5Oycq94zo="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,55 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Events.html",
-          "hash": "b7eM7xndcUkEqiuCF0U8uXSq3v5I2f3nLyXvc0+DuD0="
+          "hash": "Qr7F2cHueDn2CBEFx9NBFxFlhCo01Z+zbR9SOOsNidg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html",
+          "hash": "PutzVNVdc27JoJDAfEGi0CcdpR7kjH/nNKwVC8Vu2ek="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.html",
+          "hash": "gO0P59TDHBDcdn6Lyal+/EovA4pSJvBe/HoCdVCbrnQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
+          "hash": "7p2OeX3GsaZmdTDC3KwOZNP3z5SgNODXARbVq5bc7e8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
+          "hash": "sl42Z1tj9cNCakGhpP0YHElnC4oSaSDYxYzlpydTchY="
         }
       },
       "is_incremental": false,
@@ -114,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "WqAv9Sm1jzdPshWBHSS8/g+QYza4v8JYgCrCR8T7no8="
+          "hash": "sUOsZaDtNJyJnVpdyfuIytK06RXkP6N0kH6gR7b44Cg="
         }
       },
       "is_incremental": false,
@@ -189,7 +237,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 8,
+          "total_file_count": 12,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
