@@ -1,8 +1,9 @@
-﻿using CG.Validations;
+﻿using CG.Events;
+using CG.Validations;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace CG.Events
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// This class contains extension methods related to the <see cref="IServiceCollection"/>

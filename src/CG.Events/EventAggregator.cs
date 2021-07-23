@@ -97,8 +97,25 @@ namespace CG.Events
                         );
                 }
 
-                // Save the reference.
-                _events.TryAdd(typeof(TEvent), ev);
+                // Did we fail to save our event?
+                if (!_events.TryAdd(typeof(TEvent), ev))
+                {
+                    // If we get here then another thread/task saved their
+                    //   event instance in the _events table before we had 
+                    //   a chance to save ours. So, let's use theirs instead.
+
+                    if (!_events.TryGetValue(typeof(TEvent), out ev))
+                    {
+                        // If we get here then the world no longer makes sense,
+                        //    white is black, up is down, and we can't save an
+                        //    event object to our table, for some reason.
+
+                        // Panic!!
+                        throw new EventAggregatorException(
+                            message: $"Failed to save the event: '{typeof(TEvent).Name}'"
+                            );
+                    }
+                }
             }
 
             // Return the results.

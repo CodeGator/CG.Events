@@ -2,12 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace CG.Events.Models
 {
     /// <summary>
-    /// This class is a base implementation of an<see cref="IEventAggregator"/> 
-    /// event.
+    /// This class is a base implementation of an <see cref="IEventAggregator"/> 
+    /// event. 
     /// </summary>
     public abstract class EventBase 
     {
@@ -120,6 +121,49 @@ namespace CG.Events.Models
         // *******************************************************************
 
         /// <summary>
+        /// This method publishes the event to all current subscribers.
+        /// </summary>
+        /// <param name="args">Optional arguments for the event.</param>
+        /// <exception cref="AggregateException">This exception is thrown 
+        /// whenever one or more errors are detected whil publishing.</exception>
+        public virtual Task PublishAsync(
+            params object[] args
+            )
+        {
+            // Get all the currently active subscriptions.
+            var activeSubscriptions = _subscriptions.Where(
+                x => x.IsAlive
+                );
+
+            // Loop through the active subscriptions.
+            foreach (var sub in activeSubscriptions)
+            {
+                // Invoke the subscription's event handler.
+                Task.Run(() => sub.Invoke(args));
+            }
+
+            // Get a list of dead subscriptions.
+            var deadSubscriptions = _subscriptions.Where(
+                x => !x.IsAlive
+                ).ToList();
+
+            lock (_sync)
+            {
+                // Loop through the dead subscriptions.
+                foreach (var deadSub in deadSubscriptions)
+                {
+                    // Remove the subscription.
+                    _subscriptions.Remove(deadSub);
+                }
+            }
+
+            // Return the completed task.
+            return Task.CompletedTask;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
         /// This method subscribes to an event using the specified delegate. 
         /// That delegate is then called by the event whenever the <see cref="Publish"/> 
         /// method is called.
@@ -167,7 +211,7 @@ namespace CG.Events.Models
             // Create the event subscription.
             var subscription = new EventSubscription(
                 (args) => OnInvoke(args),
-                false
+                false 
                 );
 
             lock (_sync)

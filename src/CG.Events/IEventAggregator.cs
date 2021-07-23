@@ -9,11 +9,12 @@ namespace CG.Events
     public interface IEventAggregator
     {
         /// <summary>
-        /// This method returns an instance of the specified 
-        /// event type.
+        /// This method returns an instance of the specified event type.
         /// </summary>
         /// <typeparam name="TEvent">The type of associated event.</typeparam>
         /// <returns>An instance of the specified event.</returns>
+        /// <exception cref="EventAggregatorException">This exception is thrown
+        /// whenever this operation failes to produce an event.</exception>
         TEvent GetEvent<TEvent>()
             where TEvent : EventBase;
     }
