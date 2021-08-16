@@ -19,6 +19,7 @@ Platforms supported:
     <PackageIconUrl />
     <RepositoryType>git</RepositoryType>
     <PackageTags>events, aggregator, CG.Events, CodeGator</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,10 +27,18 @@ Platforms supported:
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.231">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
     <None Include="..\..\packageDefaultIcon-50x50.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\README.md">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
