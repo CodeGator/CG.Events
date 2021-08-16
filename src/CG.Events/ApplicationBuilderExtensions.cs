@@ -1,5 +1,4 @@
 ﻿using CG.Validations;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
 
 namespace Microsoft.AspNetCore.Builder
