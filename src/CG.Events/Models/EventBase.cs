@@ -204,14 +204,18 @@ namespace CG.Events.Models
         /// method is then called on that event, the event's <see cref="OnInvoke"/> 
         /// method is then called.
         /// </summary>
+        /// <param name="stringReference">True to keep a strong reference to
+        /// the event; false otherwise.</param>
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// one or more arguments are missing, or invalid.</exception>
-        public virtual IDisposable Subscribe()
+        public virtual IDisposable Subscribe(
+            bool strongReference = false
+            )
         {
             // Create the event subscription.
             var subscription = new EventSubscription(
                 (args) => OnInvoke(args),
-                false 
+                strongReference
                 );
 
             lock (_sync)

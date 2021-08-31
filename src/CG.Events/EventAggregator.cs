@@ -3,6 +3,7 @@ using CG.Validations;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Concurrent;
+using System.Linq;
 
 namespace CG.Events
 {
@@ -86,7 +87,7 @@ namespace CG.Events
                 // How should we create the event?
                 if (null == _serviceProvider)
                 {
-                    // Create the event the old fashioned way.
+                    // Create the event the old fashioned way (no DI support).
                     ev = Activator.CreateInstance<TEvent>();
                 }
                 else
