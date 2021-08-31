@@ -291,12 +291,6 @@ references:
   isSpec: "True"
   fullName: CG.Events.Models.EventBase.PublishAsync
   nameWithType: EventBase.PublishAsync
-- uid: CG.Events.Models.EventBase.Subscribe
-  name: Subscribe()
-  href: api/CG.Events.Models.EventBase.html#CG_Events_Models_EventBase_Subscribe
-  commentId: M:CG.Events.Models.EventBase.Subscribe
-  fullName: CG.Events.Models.EventBase.Subscribe()
-  nameWithType: EventBase.Subscribe()
 - uid: CG.Events.Models.EventBase.Subscribe(System.Action{System.Object[]},System.Boolean)
   name: Subscribe(Action<Object[]>, Boolean)
   href: api/CG.Events.Models.EventBase.html#CG_Events_Models_EventBase_Subscribe_System_Action_System_Object____System_Boolean_
@@ -306,6 +300,12 @@ references:
   fullName.vb: CG.Events.Models.EventBase.Subscribe(System.Action(Of System.Object()), System.Boolean)
   nameWithType: EventBase.Subscribe(Action<Object[]>, Boolean)
   nameWithType.vb: EventBase.Subscribe(Action(Of Object()), Boolean)
+- uid: CG.Events.Models.EventBase.Subscribe(System.Boolean)
+  name: Subscribe(Boolean)
+  href: api/CG.Events.Models.EventBase.html#CG_Events_Models_EventBase_Subscribe_System_Boolean_
+  commentId: M:CG.Events.Models.EventBase.Subscribe(System.Boolean)
+  fullName: CG.Events.Models.EventBase.Subscribe(System.Boolean)
+  nameWithType: EventBase.Subscribe(Boolean)
 - uid: CG.Events.Models.EventBase.Subscribe*
   name: Subscribe
   href: api/CG.Events.Models.EventBase.html#CG_Events_Models_EventBase_Subscribe_

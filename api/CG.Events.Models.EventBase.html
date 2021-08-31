@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class EventBase
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -318,16 +318,41 @@ whenever one or more errors are detected whil publishing.</p>
     </tbody>
   </table>
   <a id="CG_Events_Models_EventBase_Subscribe_" data-uid="CG.Events.Models.EventBase.Subscribe*"></a>
-  <h4 id="CG_Events_Models_EventBase_Subscribe" data-uid="CG.Events.Models.EventBase.Subscribe">Subscribe()</h4>
-  <div class="markdown level1 summary"><p>This method subscribes to an event. When the <a class="xref" href="CG.Events.Models.EventBase.html#CG_Events_Models_EventBase_Publish_System_Object___">Publish(Object[])</a>
-method is then called on that event, the event's <a class="xref" href="CG.Events.Models.EventBase.html#CG_Events_Models_EventBase_OnInvoke_System_Object___">OnInvoke(Object[])</a>
-method is then called.</p>
+  <h4 id="CG_Events_Models_EventBase_Subscribe_System_Action_System_Object____System_Boolean_" data-uid="CG.Events.Models.EventBase.Subscribe(System.Action{System.Object[]},System.Boolean)">Subscribe(Action&lt;Object[]&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>This method subscribes to an event using the specified delegate.
+That delegate is then called by the event whenever the <a class="xref" href="CG.Events.Models.EventBase.html#CG_Events_Models_EventBase_Publish_System_Object___">Publish(Object[])</a>
+method is called.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IDisposable Subscribe()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IDisposable Subscribe(Action&lt;object[]&gt; action, bool strongReference = false)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Object</span>[]&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The delegate to use for the subscription.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">strongReference</span></td>
+        <td><p>Indicates whether to maintain a strong
+or weak reference to the action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -361,15 +386,15 @@ one or more arguments are missing, or invalid.</p>
     </tbody>
   </table>
   <a id="CG_Events_Models_EventBase_Subscribe_" data-uid="CG.Events.Models.EventBase.Subscribe*"></a>
-  <h4 id="CG_Events_Models_EventBase_Subscribe_System_Action_System_Object____System_Boolean_" data-uid="CG.Events.Models.EventBase.Subscribe(System.Action{System.Object[]},System.Boolean)">Subscribe(Action&lt;Object[]&gt;, Boolean)</h4>
-  <div class="markdown level1 summary"><p>This method subscribes to an event using the specified delegate.
-That delegate is then called by the event whenever the <a class="xref" href="CG.Events.Models.EventBase.html#CG_Events_Models_EventBase_Publish_System_Object___">Publish(Object[])</a>
-method is called.</p>
+  <h4 id="CG_Events_Models_EventBase_Subscribe_System_Boolean_" data-uid="CG.Events.Models.EventBase.Subscribe(System.Boolean)">Subscribe(Boolean)</h4>
+  <div class="markdown level1 summary"><p>This method subscribes to an event. When the <a class="xref" href="CG.Events.Models.EventBase.html#CG_Events_Models_EventBase_Publish_System_Object___">Publish(Object[])</a>
+method is then called on that event, the event's <a class="xref" href="CG.Events.Models.EventBase.html#CG_Events_Models_EventBase_OnInvoke_System_Object___">OnInvoke(Object[])</a>
+method is then called.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IDisposable Subscribe(Action&lt;object[]&gt; action, bool strongReference = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IDisposable Subscribe(bool strongReference = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -382,17 +407,9 @@ method is called.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Object</span>[]&gt;</td>
-        <td><span class="parametername">action</span></td>
-        <td><p>The delegate to use for the subscription.</p>
-</td>
-      </tr>
-      <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">strongReference</span></td>
-        <td><p>Indicates whether to maintain a strong
-or weak reference to the action.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
