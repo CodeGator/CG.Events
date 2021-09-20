@@ -6,7 +6,7 @@ namespace CG.Events
     /// <summary>
     /// This interface represents an object that manages event aggregation.
     /// </summary>
-    public interface IEventAggregator
+    public interface IEventAggregator : IDisposable
     {
         /// <summary>
         /// This method returns an instance of the specified event type.

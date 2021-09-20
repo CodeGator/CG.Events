@@ -10,7 +10,7 @@ namespace CG.Events.Models
     /// This class is a base implementation of an <see cref="IEventAggregator"/> 
     /// event. 
     /// </summary>
-    public abstract class EventBase 
+    public abstract class EventBase : DisposableBase, IDisposable
     {
         // *******************************************************************
         // Fields.
@@ -204,7 +204,7 @@ namespace CG.Events.Models
         /// method is then called on that event, the event's <see cref="OnInvoke"/> 
         /// method is then called.
         /// </summary>
-        /// <param name="stringReference">True to keep a strong reference to
+        /// <param name="strongReference">True to keep a strong reference to
         /// the event; false otherwise.</param>
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// one or more arguments are missing, or invalid.</exception>

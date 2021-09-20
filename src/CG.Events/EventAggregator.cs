@@ -3,7 +3,6 @@ using CG.Validations;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Concurrent;
-using System.Linq;
 
 namespace CG.Events
 {
@@ -11,7 +10,7 @@ namespace CG.Events
     /// This class is a default implementation of the <see cref="IEventAggregator"/>
     /// interface.
     /// </summary>
-    public class EventAggregator : IEventAggregator
+    public class EventAggregator : DisposableBase, IEventAggregator
     {
         // *******************************************************************
         // Fields.
@@ -121,6 +120,37 @@ namespace CG.Events
 
             // Return the results.
             return (TEvent)ev;
+        }
+
+        #endregion
+
+        // *******************************************************************
+        // Protected methods.
+        // *******************************************************************
+
+        #region Protected methods
+
+        /// <summary>
+        /// This method is called when the object is garbage collected.
+        /// </summary>
+        /// <param name="disposing">True to cleanup managed resources.</param>
+        protected override void Dispose(bool disposing)
+        {
+            // Should we cleanup managed resources?
+            if (disposing)
+            {
+                // Loop and cleanup events.
+                foreach (var kvp in _events)
+                {
+                    (kvp.Value as IDisposable)?.Dispose();
+                }
+
+                // Clear the events.
+                _events.Clear();
+            }
+
+            // Give the base class a chance.
+            base.Dispose(disposing);
         }
 
         #endregion

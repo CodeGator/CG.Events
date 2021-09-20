@@ -31,10 +31,10 @@ namespace CG.Events
             get
             {
                 // How should we deal with the inner reference?
-                if (_innerReference is WeakReference)
+                if (_innerReference is WeakReference reference)
                 {
                     // Is is alive?
-                    return ((WeakReference)_innerReference).IsAlive;
+                    return reference.IsAlive;
                 }
                 else
                 {
@@ -96,10 +96,10 @@ namespace CG.Events
             )
         {
             // How should we deal with the inner reference?
-            if (_innerReference is WeakReference)
+            if (_innerReference is WeakReference reference)
             {
                 // Invoke the target handler for the event.
-                (((WeakReference)_innerReference).Target as Action<object[]>)?.Invoke(
+                (reference.Target as Action<object[]>)?.Invoke(
                     args
                     );
             }
@@ -120,16 +120,19 @@ namespace CG.Events
         public void Dispose()
         {
             // How should we deal with the inner reference?
-            if (_innerReference is WeakReference)
+            if (_innerReference is WeakReference reference)
             {
                 // Release the reference.
-                ((WeakReference)_innerReference).Target = null;
+                reference.Target = null;
             }
             else
             {
                 // Release the reference.
                 _innerReference = null;
             }
+
+            // Prevent derived types from having to re-implement Dispose.
+            GC.SuppressFinalize(this);
         }
 
         #endregion
