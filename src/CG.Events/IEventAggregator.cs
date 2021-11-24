@@ -13,7 +13,7 @@ namespace CG.Events
         /// </summary>
         /// <typeparam name="TEvent">The type of associated event.</typeparam>
         /// <returns>An instance of the specified event.</returns>
-        /// <exception cref="EventAggregatorException">This exception is thrown
+        /// <exception cref="Exception">This exception is thrown
         /// whenever this operation failes to produce an event.</exception>
         TEvent GetEvent<TEvent>()
             where TEvent : EventBase;
